@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .menu-item {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 40px 10px 10px; /* Espacio adicional para el título */
+    position: relative; /* Contenedor relativo para posicionar el título */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Región de título */
+  .menu-title {
+    background-color: #d9534f;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 10px;
+    right: 10px;
+  }
+  
+  .menu-item.chicken .menu-title {
+    background-color: #f0ad4e;
+  }
+  
+  .menu-item.beef .menu-title {
+    background-color: #d9534f;
+  }
+  
+  .menu-item.sushi .menu-title {
+    background-color: #f7e359;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  
+  /* Escritorio: 992px y superior */
+  @media (min-width: 992px) {
+    .menu-item {
+      width: 30%;
+    }
+  }
+  
+  /* Tableta: 768px a 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu-item {
+      width: 45%;
+    }
+  
+    .menu-item:nth-child(3) {
+      width: 100%;
+    }
+  }
+  
+  /* Móvil: 767px y menor */
+  @media (max-width: 767px) {
+    .menu-item {
+      width: 100%;
+    }
+  }
+  
